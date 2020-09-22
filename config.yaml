@@ -1,0 +1,11 @@
+vertica:
+  user: dbadmin
+  pass: password
+  host: vertica.host.com
+  port: 5433
+  db: main
+  checkinterval: 5  #How often check schemas size in minutes
+schemas:
+  example_schema:  #Name of schema
+    limit: 100   #Size of limited schema in Gb
+    role: RW_example_schema_role  #Name of RW role for schema
